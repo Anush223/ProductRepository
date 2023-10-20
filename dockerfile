@@ -1,17 +1,11 @@
 
 
-# FROM maven:3.8.5-openjdk-17 # for Java 17
+FROM openjdk:17-jdk-slim
 
-FROM maven:3.8.2-jdk-17
+ARG JAR_FILE=target/Product.jar
 
- 
+WORKDIR .
 
-WORKDIR /46331360Product
+COPY $(JAR_FILE) app.jar
 
-COPY . .
-
-RUN mvn clean install
-
- 
-
-CMD mvn spring-boot:run
+ENTRYPOINT ["java","-jar","app.jar"]

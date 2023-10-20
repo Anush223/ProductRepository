@@ -1,0 +1,5 @@
+com\cg\Application.class
+com\cg\service\Productservice.class
+com\cg\controller\Productcontroller.class
+com\cg\dao\ProductDao.class
+com\cg\entity\Product.class

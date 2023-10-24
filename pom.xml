@@ -40,7 +40,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>product-app</finalName>
+		<finalName>Product</finalName>
 
 
 		<plugins>
